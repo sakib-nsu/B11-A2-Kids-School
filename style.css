@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: "Quicksand", serif;
+    font-style: normal;
+}
+
+/* Global */
+
+.display-flex{
+    display: flex;
+}
+
+
+/* Navbar */
+
+.navbar{
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar-logo{
+    gap: 11px;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 32px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#nav-home{
+    font-weight: bold;
+    color: rgba(254, 163, 1, 1);
+}
+#nav-about{
+    color: rgba(1, 172, 253, 1);
+}
+#av-facilities{
+    color: #05D4DF;
+}
+#nav-admission{
+    color: #5D58EF;
+}
+
+.primary-btn{
+    background-color: rgba(254, 163, 1, 1);
+    color: #FFFFFF;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+/* Banner */
+
+.banner{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.banner-content{
+    
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#empowering{
+    color: rgba(254, 163, 1, 1);
+}
+#towards-vision{
+    color: rgba(1, 172, 253, 1);
+}
+
+.secondary-btn{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+}
