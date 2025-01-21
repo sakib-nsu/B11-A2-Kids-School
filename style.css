@@ -3,6 +3,8 @@
 *{
     font-family: "Quicksand", serif;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
  /* Global */
@@ -76,6 +78,21 @@ main{
     font-size: 1.25rem;
 }
 
+.menu-icon{
+    display: none;
+}
+.marq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #05D4DF;
+    font-size: 1.5rem;
+    background-color: #ecb73b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
 /* Banner */
 .banner{
     max-width: 1160px;
@@ -113,6 +130,7 @@ main{
     border-radius: 12px;
     border: none;
     font-size: 1.25rem;
+    font-weight: 600;
 }
 
 
@@ -141,7 +159,6 @@ main{
 .curriculum-card-1{
     background: linear-gradient(to bottom, #DEF5FF, #ffffff);
     border-radius: 19px;
-
 }
 
 .read-more-1{
@@ -224,7 +241,50 @@ main{
 
 }
 
+.stories-cards{
+    margin-bottom: 80px;
+}
 
+.stories-card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 38px;
+    padding-right: 38px;
+    line-height: 38px;
+}
+.stories-card-description{
+    color: rgba(102, 102, 102, 1);
+    font-weight: 500;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.stories-sub-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.stories-btn{
+    text-align: center;
+}
+.thirdly-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ==================================================== */
+
+/* Footer */
+
+footer{
+    background-color: #01ACFD;
+}
 
 
 
@@ -234,11 +294,19 @@ main{
 /* Responsive */
 
 @media screen and (max-width: 756px) {
+    .navbar{
+        border: 1px solid orange;
+        padding: 12p 16px;
+    }
 
     .nav-links,
     .navbar-title,
     .primary-btn{
         display: none;
+    }
+    .menu-icon{
+        display: block;
+    
     }
 
     .banner{
@@ -261,7 +329,7 @@ main{
     }
 
     .enroll-now{
-        justify-content: center;
+        text-align: center;
     }
 
     .curriculum-cards{
@@ -269,6 +337,13 @@ main{
     }
     .curriculum-card-description{
         text-align: center;
+    }
+
+    .slider-controls{
+        display: none;
+    }
+    .stories-btn{
+        display: none;
     }
 
 }
