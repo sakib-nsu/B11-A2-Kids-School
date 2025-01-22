@@ -608,8 +608,19 @@ footer{
       .stories-cards img {
         width: 170px;
         height: 100px;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
+    .date-text{
+        width: 103px;
+        height: 22px;
+        padding: 0;
+        font-size: .6rem;
+        margin-bottom: -10px;
+    }
+    .stories-sub-card-title{
+        text-align: center;
+        padding: 0;
+    }
 
 }
