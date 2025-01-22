@@ -374,8 +374,9 @@ footer{
 }
 
 .footer-img{
-    height: 82px;
+    height: 75px;
     width: 300px;
+    gap: 10px;
 }
 
 .footer-title{
