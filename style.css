@@ -3,6 +3,8 @@
 *{
     font-family: "Quicksand", serif;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
  /* Global */
@@ -46,7 +48,7 @@ main{
     margin-right: 32px;
 }
 
-.nav-link{
+.nav-links{
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
@@ -76,6 +78,21 @@ main{
     font-size: 1.25rem;
 }
 
+.menu-icon{
+    display: none;
+}
+.marq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #05D4DF;
+    font-size: 1.5rem;
+    background-color: #ecb73b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
 /* Banner */
 .banner{
     max-width: 1160px;
@@ -94,7 +111,7 @@ main{
     margin-bottom: 24px;
 }
 
-.banner-desctiption{
+.banner-description{
     margin-top: 0;
     margin-bottom: 24px;
 }
@@ -113,6 +130,7 @@ main{
     border-radius: 12px;
     border: none;
     font-size: 1.25rem;
+    font-weight: 600;
 }
 
 
@@ -141,7 +159,11 @@ main{
 .curriculum-card-1{
     background: linear-gradient(to bottom, #DEF5FF, #ffffff);
     border-radius: 19px;
+    border: 0.35px solid #DEF5FF;
+}
 
+.curriculum-card-1 img{
+    justify-content: center;
 }
 
 .read-more-1{
@@ -149,12 +171,14 @@ main{
     text-align: center;
     font-size: 1rem;
     color: #64C8FF;
+    margin-bottom: 53px;
 }
 
 
 .curriculum-card-2{
     background: linear-gradient(to bottom, #FFF4DC, #ffffff);
     border-radius: 19px;
+    border: 0.35px solid #DEF5FF;
 }
 
 .curriculum-card-2 img{
@@ -166,11 +190,13 @@ main{
     text-align: center;
     font-size: 1rem;
     color: #F0AA00;
+    margin-bottom: 53px;
 }
 
 .curriculum-card-3{
     background: linear-gradient(to bottom, #F2E8FF, #ffffff);
     border-radius: 19px;
+    border: 0.35px solid #DEF5FF;
 }
 
 .curriculum-card-3 img{
@@ -182,18 +208,21 @@ main{
     text-align: center;
     font-size: 1rem;
     color: #8700FF;
+    margin-bottom: 53px;
 }
 
 .curriculum-card-title{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .curriculum-card-description{
     font-weight: 500;
     text-align: center;
     color: rgba(128, 128, 128, 1);
+    margin-bottom: 32px;
 }
 
 .slider-controls{
@@ -224,7 +253,50 @@ main{
 
 }
 
+.stories-cards{
+    margin-bottom: 80px;
+}
 
+.stories-card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 38px;
+    padding-right: 38px;
+    line-height: 38px;
+}
+.stories-card-description{
+    color: rgba(102, 102, 102, 1);
+    font-weight: 500;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.stories-sub-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.stories-btn{
+    text-align: center;
+}
+.thirdly-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ==================================================== */
+
+/* Footer */
+
+footer{
+    background-color: #01ACFD;
+}
 
 
 
@@ -234,16 +306,28 @@ main{
 /* Responsive */
 
 @media screen and (max-width: 756px) {
+    .navbar{
+        border: 1px solid orange;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     .nav-links,
     .navbar-title,
     .primary-btn{
         display: none;
     }
+    .menu-icon{
+        display: inline-block;
+        padding: 15px;
+        font-size: 24px;
+    }
 
     .banner{
         flex-direction: column-reverse;
         margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .banner-content{
@@ -251,7 +335,7 @@ main{
     }
 
     .banner-title,
-    .banner-desctiption{
+    .banner-description{
         text-align: center;
         margin-bottom: 18px;
     }
@@ -261,14 +345,24 @@ main{
     }
 
     .enroll-now{
-        justify-content: center;
+        text-align: center;
     }
 
     .curriculum-cards{
         grid-template-columns: 1fr;
+        gap: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .curriculum-card-description{
         text-align: center;
+    }
+
+    .slider-controls{
+        display: none;
+    }
+    .stories-btn{
+        display: none;
     }
 
 }
