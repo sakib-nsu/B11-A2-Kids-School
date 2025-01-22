@@ -309,6 +309,13 @@
     gap: 20px;
 }
 
+.stories-sub-cards img{
+    width: 290px;
+    height: 177px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .stories-sub-card{
     background-color: white;
     border-radius: 16px;
