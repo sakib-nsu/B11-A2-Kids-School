@@ -7,7 +7,7 @@
     padding: 0;
 }
 
- /* Global */
+ /* / Global / */
 
 .display-flex{
     display: flex;
@@ -33,7 +33,11 @@
     border: none;
 }
 
-/* Navbar */
+.footer-text-color{
+    color: white;
+}
+
+/* / Navbar / */
 
 .navbar{
     justify-content: space-between;
@@ -99,7 +103,9 @@
 }
 
 
-/* Banner */
+/* / Banner / */
+
+
 .banner{
     max-width: 1160px;
     margin: 0 auto;
@@ -140,9 +146,9 @@
 }
 
 
-/* ==================================================== */
+/* / ==================================================== /
 
-/* Standard Curriculum */
+/ Standard Curriculum / */
 
 .curriculum{
     background-image: url(assets/bg.png);
@@ -254,13 +260,12 @@
     color: white;
 }
 
-/* ==================================================== */
+/* / ==================================================== /
 
-/* Our Stories */
+/ Our Stories / */
 
 .stories{
-    background-image: url(assets/bg.png);
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
+    background-image: url(assets/bg.png), linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
 }
 
 .stories-cards{
@@ -272,7 +277,11 @@
 .stories-card{
     background-color: white;
     border-radius: 16px;
-    margin-bottom: 80px;
+    gap: 20px;
+}
+
+.stories-card img{
+    border-radius: 16px;
 }
 
 .stories-card-title{
@@ -300,6 +309,22 @@
     gap: 20px;
 }
 
+.stories-sub-card{
+    background-color: white;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.stories-sub-card-title{
+    padding: 28px 38px;
+    line-height: 28px;
+}
+
+.stories-sub-card img{
+    border-radius: 16px;
+}
 
 .bg-color-1{
     background-color: #3CD8E8;
@@ -312,6 +337,7 @@
 }
 
 .stories-btn{
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -326,26 +352,82 @@
     margin-bottom: 60px;
 }
 
-/* ==================================================== */
+/* / ==================================================== /
 
-/* Footer */
+/ Footer / */
 
 footer{
     background-color: #01ACFD;
 }
 
+.footer-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 123px;
+    padding-bottom: 174px;
+    gap: 150px;
+}
+.footer-card{
+    width: 400px;
+}
+
+.footer-img{
+    height: 82px;
+    width: 300px;
+}
+
+.footer-title{
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.footer-description{
+    font-size: 1.25rem;
+    margin-top: 35px;
+}
+
+.about-school{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin-top: 32px;
+}
+  
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.social-icons{
+    gap: 10px;
+}
 
 
 
-/* ==================================================== */
+/* / ==================================================== /
 
-/* Responsive */
+/ Responsive / */
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
     .navbar{
         border: 1px solid orange;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
     }
 
     .nav-links,
@@ -362,8 +444,8 @@ footer{
     .banner{
         flex-direction: column-reverse;
         margin-bottom: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .banner-content{
@@ -387,8 +469,8 @@ footer{
     .curriculum-cards{
         grid-template-columns: 1fr;
         gap: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .curriculum-card-description{
         text-align: center;
@@ -397,8 +479,20 @@ footer{
     .slider-controls{
         display: none;
     }
-    .stories-btn{
+
+    .stories-card{
         display: none;
+    }
+
+    .stories-sub-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
     }
 
 }
