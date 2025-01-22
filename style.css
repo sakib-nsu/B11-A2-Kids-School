@@ -495,11 +495,14 @@ footer{
         gap: 20px;
     }
 
+
     .stories-sub-card{
         background: white;
         border-radius: 10px;
         height: 180px;
         width: 170px;
+        margin-left: 23px;
+
       }
     
       .stories-card {
