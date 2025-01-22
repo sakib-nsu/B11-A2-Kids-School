@@ -58,7 +58,8 @@
     margin-right: 32px;
 }
 
-.nav-links{
+.nav-links
+{
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
@@ -72,7 +73,7 @@
 #nav-about{
     color: rgba(1, 172, 253, 1);
 }
-#av-facilities{
+#nav-facilities{
     color: #05D4DF;
 }
 #nav-admission{
